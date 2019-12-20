@@ -91,3 +91,120 @@ class ParentComponent extends React.Component {
 ///////////
 
 
+const TypesOfFruit = () => {
+  return (
+    <div>
+      <h2>Fruits:</h2>
+      <ul>
+        <li>Apples</li>
+        <li>Blueberries</li>
+        <li>Strawberries</li>
+        <li>Bananas</li>
+      </ul>
+    </div>
+  );
+};
+
+const Fruits = () => {
+  return (
+    <div>
+      { /* change code below this line */ }
+<TypesOfFruit />;
+      { /* change code above this line */ }
+    </div>
+  );
+};
+
+class TypesOfFood extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Types of Food:</h1>
+        { /* change code below this line */ }
+<Fruits />;
+        { /* change code above this line */ }
+      </div>
+    );
+  }
+};
+
+
+/////
+
+class TypesOfFood extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>Types of Food:</h1>
+        {/* change code below this line */}
+<Fruits />
+<Vegetables />
+        {/* change code above this line */}
+      </div>
+    );
+  }
+};
+
+// change code below this line
+ReactDOM.render(<TypesOfFood />, document.getElementById("challenge-node"));
+
+/////
+
+
+// change code below this line
+class MyComponent extends React.Component 
+{
+    constructor(props) 
+    {
+        super(props);
+    } 
+
+    render()
+    {
+    return (<div><h1>My First React Component!</h1></div>);
+    }
+};
+
+ReactDOM.render(<MyComponent />, document.getElementById("challenge-node"));
+
+//////
+
+const CurrentDate = (props) => {
+  return (
+    <div>
+      { /* change code below this line */ }
+      <p>The current date is:  {props.date}</p>
+      { /* change code above this line */ }
+    </div>
+  );
+};
+
+class Calendar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h3>What date is it?</h3>
+        { /* change code below this line */ }
+        <CurrentDate date={Date()} />
+        { /* change code above this line */ }
+      </div>
+    );
+  }
+};
+
+
+//////
+
+
+
+
